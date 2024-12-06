@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wwwprojekts.css">
+    <title>Sandwich House</title>
+</head>
+
+<style>
+    h1 {
+        font-family: 'Super Brodie';
+        color: rgb(194, 255, 186);
+        font-size: 100px;
+    }
+
+    .imgs{
+        width: 450px;
+    }
+
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .row1 {
+    display: flex;
+    }
+
+    .column1 {
+    flex: 33.33%;
+    padding: 5px;
+    }
+
+    h2{
+        font-family: 'Super Brodie';
+        font-size: 35px;
+        color: rgb(216, 224, 168);
+    }
+
+    h3{
+        font-family: 'Orange_Juice';
+        font-size: 20px;
+        color: rgb(109, 226, 177);
+    }
+
+    .gallary-item {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .fadeIn {
+        opacity: 1;
+    }
+
+    a{
+        align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .row1 {
+    display: block;
+    }
+    }
+</style>
+
+<header>
+<div class="menu">
+    <div class="menu-title"></div>
+    <div class="menu-title">SANDWICH HOUSE</div>
+    <div class="menu-btn" onclick="toggleMenu(event)">&#9776;</div>
+</div>
+
+    <div class="topnav" id="myTopnav">
+        <div id="myLinks">
+            <a href="wwwproj.html">Start</a>
+            <a href="menu.html">Menu</a>
+            <a href="kotaktinfo.html">Contact</a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <section class="home-slider owl-carousel img" style="background-image: url(images/bg_1.jpg);">
+        <div class="slider-item" style="background-image: url(images/menuimage.png);">
+          <div class="overlay">
+          <div class="container">
+            <div class="row slider-text justify-content-center align-items-center">
+              <div class="col-md-7 col-sm-12 text-center ftco-animate"></div>
+                <H1>Our Menu</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="gallary-item wfadeIn">
+                        <div class="row1">
+                            <div class="column1">
+                                <img src="images/sandwitch1.jpg" alt="" class="imgs">
+                            </div>
+                            <div class="column1">
+                                <h2>Fusion Feast Sandwitch $6.50</h2>
+                                <h3>a tantalizing blend of flavors and textures, where savory meets sweet, crunchy meets creamy, and every bite is a culinary adventure. From succulent slices of roast turkey to tangy cranberry sauce, nestled between layers of crisp lettuce and melted Swiss cheese, this sandwich is a symphony of taste sensations that will leave your taste buds craving more. Experience the harmony of diverse ingredients harmonizing in every bite.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary-item wfadeIn">
+                        <div class="row1">
+                            <div class="column1">
+                                <h2>Global Fusion Sandwich $7.00</h2>
+                                <h3>A passport to taste sensations! Imagine layers of tender teriyaki chicken, tangy mango salsa, creamy avocado, and crisp lettuce, all hugged by soft ciabatta bread. This sandwich is a world tour of flavors in every bite—a harmony of sweet, savory, and spicy that will transport your taste buds to exotic destinations. Embark on a culinary adventure with every mouthwatering bite of the Global Fusion Sandwich.</h3>
+                            </div>
+                            <div class="column1">
+                                <img src="images/sandwitch2.jpg" alt="" class="imgs">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary-item wfadeIn">
+                        <div class="row1">
+                            <div class="column1">
+                                <img src="images/sandwitch3.jpg" alt="" class="imgs">
+                            </div>
+                            <div class="column1">
+                                <h2>Coastal Catch Sandwich $9.00</h2>
+                                <h3>Dive into a sea of flavor with our Coastal Catch Sandwich! Featuring flaky, grilled fish fillet nestled between soft brioche buns, topped with a zesty tartar sauce and crisp lettuce. Every bite is a taste of the ocean's bounty, perfectly balanced with fresh, tangy flavors. Whether you're a seafood enthusiast or simply craving something light and delicious, the Coastal Catch Sandwich is sure to reel you in with its irresistible taste.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="gallary-item wfadeIn">
+                        <div class="row1">
+                            <div class="column1">
+                                <h2>Garden Delight Sandwich $4.50</h2>
+                                <h3>a vibrant celebration of fresh, seasonal vegetables and wholesome goodness. Packed with crunchy cucumbers, juicy tomatoes, crisp lettuce, and creamy avocado, all nestled between slices of hearty whole grain bread. Drizzled with a zesty herb-infused dressing, each bite bursts with flavor and nourishment, making it a deliciously satisfying choice for veggie lovers and health enthusiasts alike. Taste the freshness, bite by bite.</h3>
+                            </div>
+                            <div class="column1">
+                                <img src="images/sandwitch4.jpg" alt="" class="imgs">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary-item wfadeIn">
+                        <div class="row1">
+                            <div class="column1">
+                                <img src="images/sandwitch5.jpg" alt="" class="imgs">
+                            </div>
+                            <div class="column1">
+                                <h2>Classic Ham Sandwich $9.00</h2>
+                                <h3>A timeless favorite crafted with thinly sliced, succulent ham layered between soft, freshly baked bread. Paired with a hint of tangy mustard, a crisp lettuce leaf, and a slice of juicy tomato, each bite is a simple yet satisfying indulgence. Whether enjoyed for lunch or a quick snack, this iconic sandwich delivers the comforting flavors you know and love, making it a staple in any sandwich lover's repertoire.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary-item wfadeIn">
+                        <div class="row1">
+                            <div class="column1">
+                                <h2>Craft Your Own Adventure!</h2>
+                                <h3>Let your imagination run wild! Start with your choice of freshly baked bread—whether it's hearty whole grain, soft ciabatta, or a classic baguette. Then, select your favorite protein, from succulent roast turkey to savory grilled tofu. Load up on crisp veggies like lettuce, tomatoes, and cucumbers, and add a creamy spread like avocado or hummus. Top it off with your favorite condiments and seasonings for a customized creation that's as unique as you are. With endless possibilities, the adventure begins with every bite of your very own Craft Your Own Adventure Sandwich.</h3>
+                            </div>
+                            <div class="column1">
+                                <img src="images/sandwitch6.jpg" alt="" class="imgs">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="kotaktinfo.html"><h2>Order now!</h2></a>
+    </section>
+</body>
+
+
+<script>
+
+function toggleMenu(event) {
+    event.preventDefault();
+    var menuOptions = document.getElementById("myLinks");
+    if (menuOptions.style.display === "block") {
+        menuOptions.style.display = "none";
+    } else {
+        menuOptions.style.display = "block";
+    }
+}
+
+function toggleNav(event) {
+    event.preventDefault();
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function fadeInElements() {
+    var items = document.querySelectorAll('.gallary-item');
+    items.forEach(function(item) {
+        if (isInViewport(item)) {
+            item.classList.add('fadeIn');
+        }
+    });
+}
+
+fadeInElements();
+
+window.addEventListener('scroll', function() {
+    fadeInElements();
+});
+
+</script>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wwwprojekts.css">
+    <title>Sandwich House</title>
+</head>
+
+<style>
+
+:root {
+	--cards: 8;
+	--cardHeight: 80vh;
+	--cardTopPadding: 1.5em;
+	--cardMargin: 4vw;
+}
+
+h2 {
+    font-family: 'Super Brodie';
+    font-size: 2.2em;
+    color: rgb(109, 226, 177);
+}
+
+h3 {
+    font-family: 'Orange_Juice';
+    font-size: 1.5em;
+    color: rgb(109, 226, 177);
+    padding-top: 0.3em;
+}
+
+p {
+    font-family: 'Orange_Juice';
+    font-size: 1.2em;
+    color: rgb(109, 226, 177);
+    padding-top: 0.3em;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#cards {
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+	margin-bottom: var(--cardMargin);
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#myLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 769px) {
+
+#card1 {
+	--index: 1;
+}
+#card2 {
+	--index: 8;
+}
+#card3 {
+	--index: 7;
+}
+#card4 {
+	--index: 6;
+}
+#card5 {
+	--index: 5;
+}
+#card6 {
+	--index: 4;
+}
+#card7 {
+	--index: 3;
+}
+#card8 {
+	--index: 2;
+}
+#card1 .card-body {
+	background-image: url('images/logo.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+    background-size: 600px;
+}
+#card2 .card-body {
+	background-image: url('images/toast.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+    background-size: 600px;
+}
+#card3 .card-body {
+	background-image: url('images/butter.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+    background-size: 600px;
+}
+#card4 .card-body {
+	background-image: url('images/ham.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+    background-size: 600px;
+}
+#card5 .card-body {
+	background-image: url('images/tomato.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+    background-size: 600px;
+}
+#card6 .card-body {
+	background-image: url('images/salad.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+    background-size: 600px;
+}
+#card7 .card-body {
+	background-image: url('images/cheese.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+    background-size: 600px;
+}
+#card8 .card-body {
+	background-image: url('images/toast.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+    background-size: 600px;
+}
+
+.content {
+    height: 700px;
+    width: 1000px;
+    margin-left: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url('images/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    align-content: center;
+}
+
+.card-body {
+	box-sizing: border-box;
+	padding: 30px;
+	border-radius: 50px;
+	height: var(--cardHeight);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+    img{
+        width: 500px;
+    }
+
+    .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    background-size: cover;
+}
+
+.card-body {
+    padding: 1em;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.content {
+    width: 500px;
+    height: 100%;
+    padding: 1em;
+}
+
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.menu-btn {
+    display: block;
+}
+
+#myLinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.topnav a {
+    float: none;
+    text-align: left;
+}
+
+#cards {
+    display: block;
+}
+
+.card {
+    position: relative;
+    top: 0;
+    padding-top: 0;
+    margin-bottom: 1em;
+}
+
+.card-body {
+    height: auto;
+    padding: 1em;
+}
+
+.content {
+    background-attachment: scroll;
+
+}
+}
+
+</style>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu-title"></div>
+            <div class="menu-title">SANDWICH HOUSE</div>
+            <div class="menu-btn" onclick="toggleMenu(event)">&#9776;</div>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <div id="myLinks">
+                <a href="wwwproj.html">Start</a>
+                <a href="menu.html">Menu</a>
+                <a href="kotaktinfo.html">Contact</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <ul id="cards">
+            <li class="card" id="card1">
+                <div class="card-body">
+                    <div class="content">
+                        <h2>Freshest sandwiches</h2>
+                        <h2>Made from the freshest ingredients</h2>
+                        <h3>Freshen Up Your Day with Every Bite: The Sandwich Way!</h3>
+                    </div>
+                </div>
+            </li>
+            <li class="card" id="card2">
+                <div class="card-body">
+                    <div class="content">
+                        <h2>The Foundation: Bread</h2>
+                        <h3>Sourdough:</h3>
+                        <p>This bread is a flavor powerhouse! Its tangy notes and chewy texture create the perfect base for any sandwich. Sourdough’s natural fermentation process not only enhances its taste but also makes it easier to digest.</p>
+                        <h3>Whole Wheat:</h3>
+                        <p>Packed with fiber and nutrients, whole wheat bread is the health-conscious choice. Its nutty flavor and hearty texture add a wholesome touch to your sandwich, making it satisfying and nutritious.</p>
+                        <h3>Ciabatta:</h3>
+                        <p>Ciabatta is light, airy, and boasts a crispy crust. Its porous texture is perfect for soaking up flavors from your fillings without becoming soggy. Ideal for a sandwich that’s bursting with juicy ingredients.</p>
+                        <h3>Brioche:</h3>
+                        <p>Looking for a touch of indulgence? Brioche is your answer. Its soft, slightly sweet, and buttery nature makes it a luxurious choice, transforming your sandwich into a gourmet experience.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card" id="card3">
+                <div class="card-body">
+                    <div class="content">
+                        <h2>The Sauce Chronicles: Elevate Your Sandwich Game!</h2>
+                        <h3>Classic Ketchup</h3>
+                        <p>Beloved for its tangy sweetness and versatility, perfect for any sandwich.</p>
+                        <h3>Creamy Avocado Ranch</h3>
+                        <p>Combines rich creaminess with zesty ranch tang, ideal for grilled chicken or turkey.</p>
+                        <h3>Cheesy Garlic Aioli</h3>
+                        <p>Decadent delight with creamy mayo, garlic, and cheese, elevating any sandwich to gourmet status.</p>
+                        <h3>Sweet Honey Mustard</h3>
+                        <p>Balanced sweet and tangy, perfect for grilled meats and bacon sandwiches.</p>
+                        <h3>Pesto Perfection</h3>
+                        <p>Basil-packed flavor bomb, ideal for Caprese-inspired sandwiches.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card" id="card4">
+                <div class="card-body">
+                    <div class="content">
+                        <h2>The Heart: Protein</h2>
+                        <h3>Grilled Chicken</h3>
+                        <p>Juicy, tender, and versatile.</p>
+                        <h3>Turkey</h3>
+                        <p>Lean, flavorful, and perfect with a variety of toppings.</p>
+                        <h3>Roast Beef</h3>
+                        <p>Rich, savory, and full of umami goodness.</p>
+                        <h3>Tofu</h3>
+                        <p>For our veggie lovers, marinated tofu packs a flavorful punch.</p>
+                        <h3>Bacon</h3>
+                        <p>Crispy and smoky, adding a decadent touch.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card" id="card5">
+                <div class="card-body">
+                    <div class="content">
+                        <h2>The Crunch: Veggies</h2>
+                        <h3>Tomatoes</h3>
+                        <p>Juicy and slightly acidic, tomatoes balance the richness of other ingredients. Their vibrant color and refreshing taste make every bite a delight.</p>
+                        <h3>Cucumbers</h3>
+                        <p>Cool, crisp, and refreshing, cucumbers add a satisfying crunch to your sandwich. They’re perfect for adding a touch of lightness and a subtle flavor.</p>
+                        <h3>Red Onions</h3>
+                        <p>Sharp and tangy, red onions provide a bit of zing and a beautiful pop of color. They’re great for adding a little kick to your sandwich.</p>
+                        <h3>Avocado</h3>
+                        <p>Creamy, rich, and full of healthy fats, avocado is a must-have for any sandwich. It adds a luxurious texture and a deliciously mild flavor.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card" id="card6">
+                <div class="card-body">
+                    <div class="content">
+                        <h2>The Extras: Toppings & Spreads</h2>
+                        <h3>Lettuce</h3>
+                        <p>Fresh and crisp, lettuce adds a light crunch and a burst of green goodness. It’s the classic choice that pairs well with virtually any combination of ingredients.</p>
+                        <h3>Pickles</h3>
+                        <p>Tangy and crunchy, pickles add a burst of flavor that cuts through the richness of other ingredients. They’re the perfect balance of sour and savory.</p>
+                        <h3>Jalapeños</h3>
+                        <p>Spicy and bold, jalapeños are for those who like a little heat. They add a fiery kick that elevates your sandwich to a whole new level.</p>
+                        <h3>Hummus</h3>
+                        <p>Rich, savory, and packed with protein, hummus adds a Mediterranean twist to your sandwich. It’s creamy and flavorful, making it a fantastic spread for any sandwich.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card" id="card7">
+                <div class="card-body">
+                    <div class="content">
+                        <h2>The Creamy Element: Cheese</h2>
+                        <h3>Swiss</h3>
+                        <p>Mild and nutty, Swiss cheese melts like a dream. Its subtle flavor complements a variety of fillings without overpowering them.</p>
+                        <h3>Mozzarella</h3>
+                        <p>Soft, stretchy, and subtly flavored, mozzarella is perfect for those who love a gooey, melty cheese experience. It’s mild enough to let other ingredients shine.</p>
+                        <h3>Blue Cheese</h3>
+                        <p>Bold and tangy, blue cheese is for the adventurous palate. Its strong flavor adds a unique twist to your sandwich, creating a memorable taste sensation.</p>
+                        <h3>Vegan Cheese</h3>
+                        <p>For a plant-based option, vegan cheese offers creaminess and flavor without dairy. It’s a fantastic alternative that caters to vegans and those with lactose intolerance.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card" id="card8">
+                <div class="card-body">
+                    <div class="content">
+                        <a href="menu.html"><h2>Order now!</h2></a>
+                        <img src="images/ad.jpg" alt="Ad Space">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+
+<script>
+function toggleMenu(event) {
+    event.preventDefault();
+    var menuOptions = document.getElementById("myLinks");
+    if (menuOptions.style.display === "block") {
+        menuOptions.style.display = "none";
+    } else {
+        menuOptions.style.display = "block";
+    }
+}
+
+function toggleNav(event) {
+    event.preventDefault();
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
+
+</script>
+</html>

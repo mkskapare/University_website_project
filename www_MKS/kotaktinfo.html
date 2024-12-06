@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wwwprojekts.css">
+    <title>Sandwich House</title>
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Super Brodie';
+        font-size: 30px;
+        color: rgb(216, 224, 168);
+        text-align: center;
+}
+
+label {
+    font-family: 'Orange_Juice';
+    font-size: 20px;
+    color: #a8ff86;
+}
+
+.container {
+    padding-top: 40px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+form {
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="tel"],
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #a8ff86;
+}
+
+small {
+    color: #888;
+}
+
+button {
+    background-color: #6dbd6f;
+    color: rgb(26, 26, 26);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #247e29;
+}
+
+.formpad{
+    margin-left: 10px;
+}
+
+</style>
+
+<header>
+<div class="menu">
+    <div class="menu-title"></div>
+    <div class="menu-title">SANDWICH HOUSE</div>
+    <div class="menu-btn" onclick="toggleMenu(event)">&#9776;</div>
+</div>
+
+    <div class="topnav" id="myTopnav">
+        <div id="myLinks">
+            <a href="wwwproj.html">Start</a>
+            <a href="menu.html">Menu</a>
+            <a href="kotaktinfo.html">Contact</a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <h2>Online Sandwich Order</h2>
+        <form class="formpad" action="#">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required>
+                <small>Format: 12345678</small>
+            </div>
+            <div class="form-group">
+                <label for="sandwich">Select Sandwich:</label>
+                <select id="sandwich" name="sandwich" required>
+                    <option value="">-- Please Select --</option>
+                    <option value="FFS">Fusion Feast Sandwitch</option>
+                    <option value="GFS">Global Fusion Sandwich</option>
+                    <option value="CCS">Coastal Catch Sandwich</option>
+                    <option value="GDS">Garden Delight Sandwich</option>
+                    <option value="CHS">Classic Ham Sandwich</option>
+                    <option value="CYO">Craft Your Own Adventure!</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+                <h2>FIND US</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.808215421643!2d-2.023059797483021!3d52.55499392314649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48709858492cadb5%3A0xfb8f1d59385369a5!2sThe%20Sandwich%20House!5e0!3m2!1sen!2slv!4v1717615933197!5m2!1sen!2slv" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h2> 16 Trouse Ln, Wednesbury WS10 7HS, United Kingdom</h2>
+                    <h2> +441215057798</h2>
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+function toggleMenu(event) {
+    event.preventDefault();
+    var menuOptions = document.getElementById("myLinks");
+    if (menuOptions.style.display === "block") {
+        menuOptions.style.display = "none";
+    } else {
+        menuOptions.style.display = "block";
+    }
+}
+
+function toggleNav(event) {
+    event.preventDefault();
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+</script>
+</html>
